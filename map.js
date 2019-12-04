@@ -13,7 +13,7 @@ var mapZoom = 11.74;
         center: mapCenter, // set the centerpoint of the map programatically. Note that this is [longitude, latitude]!
         zoom: mapZoom, // set the default zoom programatically
     	style: 'mapbox://styles/xy6au/ck3qmcs881fp31cmz1q51q14o', // replace this value with the style URL from Mapbox Studio
-    	customAttribution: 'City of Charlottesville Open Data Portal (http://opendata.charlottesville.org/)', // Custom text used to attribute data source(s)
+    	customAttribution: 'City of Oakland (https://www.oaklandca.gov/)', // Custom text used to attribute data source(s)
     });
 
 
@@ -216,6 +216,8 @@ var chapters = {
             name: "China town",
             description: "One of the oldest Chinatowns in the United States.  Oakland Chinatown was settled in the 1850s, shortly after the gold rush.  In 1906, the San Francisco earthquake and fire wrecked San Francisco Chinatown, causing thousands of San Francisco Chinese survivors to move to Oakland to rebuild their lives in the East Bay.Oakland Chinatown nowadays becomes the center of Asian cultures, arts and gourmet cuisine.  You can find up to 8 Asian languages of books in the Oakland Public Library Asian Branch; learn Balinese dance at the Oakland Asian Cultural Center; eat Japanese Ramen and Vietnamese banh mi sandwich, and drink Taiwanese boba tea; and buy American Chinese fortune cookies which all can be found in Chinatown!",
             imagepath: "img/chinatown.jpg",
+                        url: '',
+
             center: [-122.27027, 37.79820],
             zoom: 16.94,
             pitch: 52.50,
@@ -225,6 +227,8 @@ var chapters = {
             name: "Lake Merritt",
             description: "Surrounded by luxuriant trees and verdant lawns, Lake Merritt is an idyllic parkland in the heart of the city of Oakland. Because the lake is a tidal lagoon filled with seawater, it is home to a marvelous variety of bird life such as Canadian geese, pelicans, the snowy egret, and black cormorants. Established in 1870, this is also the oldest designated wildlife refuge in the country.Surrounding the lake is Lakeside Park, where several acres of green space and a 3.2-mile scenic path for walking and jogging encircle the lake. Couples can take a romantic gondola ride across the lake, and the tranquil scenery is also perfect for picnics. To enjoy a more elegant meal, try the Lakeside Chalet, which has gorgeous views of the lake and music concerts on the dock during summertime.",
             imagepath: "img/california-oakland-lake-merritt.jpg",
+                        url: '',
+
             center: [-122.26135, 37.80280],
             zoom: 14.91,
             pitch: 55.50,
@@ -234,6 +238,8 @@ var chapters = {
             name: "Jack London Square",
             description: "In a picturesque setting on the Oakland estuary, Jack London Square has a relaxing maritime atmosphere. This historic neighborhood was a stomping ground of famous American author Jack London, who worked at the docks of the Oakland port. In the center of the square stands a replica of the log cabin where he lived during a wilderness expedition in Alaska. Today, Jack London Square is popular for dining or strolling along the boardwalk and waterfront trail. The area has many inviting restaurants along the European-style walkways, with waterfront terraces overlooking the marina.",
             imagepath: "img/jordon.jpg",
+                        url: '',
+
             center: [-122.27879, 37.79505],
             zoom: 16.96,
             pitch: 60.00,
@@ -243,11 +249,13 @@ var chapters = {
             name: "Redwood Regional Park",
             description: "This pristine redwood forest is just a few miles outside of downtown Oakland, and it's worth taking the drive out here to meditate in the redwood groves. Many of the stately coastal redwood trees (sequoia sempervirens) soar to 150 feet. This area was once cleared by logging for timber, but the forest has been replaced and is now protected parkland with hiking trails.",
             imagepath: "img/redwood.jpg",
+            url: '',
             center: [-122.16695, 37.81629],
             zoom: 14.30,
             pitch: 60.00,
             bearing: 8.80
         }
+        
 
     };
 
@@ -257,7 +265,7 @@ var chapters = {
     // Add the chapters to the #chapters div on the webpage
     for (var key in chapters) {
         var newChapter = $("<div class='chapter' id='" + key + "'></div>").appendTo("#chapters");
-        var chapterHTML = $("<h3>" + chapters[key]['name'] + "</h3><img src='" + chapters[key]['imagepath'] + "'><p>" + chapters[key]['description'] + "</p>").appendTo(newChapter);
+        var chapterHTML = $("<h3>" + chapters[key]['name'] + "</h3><img src='" + chapters[key]['imagepath'] + "'><p>" + chapters[key]['description'] + "</p><a class='btn btn-primary' href='" +  chapters[key]['url'] + "'>Learn More</a>").appendTo(newChapter);
     }
 
 

@@ -111,17 +111,18 @@ button {
 #chapters {
     position:relative;
     top:56px;
+    left:5px;
     height: 600px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 #chapters>.chapter {
-    margin-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 #chapters>.chapter>img {
-    width: 100%;
+    width: 90%;
 }
 
 
