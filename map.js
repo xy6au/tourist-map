@@ -216,7 +216,7 @@ var chapters = {
             name: "China town",
             description: "One of the oldest Chinatowns in the United States.  Oakland Chinatown was settled in the 1850s, shortly after the gold rush.  In 1906, the San Francisco earthquake and fire wrecked San Francisco Chinatown, causing thousands of San Francisco Chinese survivors to move to Oakland to rebuild their lives in the East Bay.Oakland Chinatown nowadays becomes the center of Asian cultures, arts and gourmet cuisine.  You can find up to 8 Asian languages of books in the Oakland Public Library Asian Branch; learn Balinese dance at the Oakland Asian Cultural Center; eat Japanese Ramen and Vietnamese banh mi sandwich, and drink Taiwanese boba tea; and buy American Chinese fortune cookies which all can be found in Chinatown!",
             imagepath: "img/chinatown.jpg",
-                        url: '',
+            url: 'https://xy6au.github.io/chinatown1/index.html',
 
             center: [-122.27027, 37.79820],
             zoom: 16.94,
@@ -245,17 +245,24 @@ var chapters = {
             pitch: 60.00,
             bearing: -0.63
         },
-        'redwoodregionpark': {
-            name: "Redwood Regional Park",
-            description: "This pristine redwood forest is just a few miles outside of downtown Oakland, and it's worth taking the drive out here to meditate in the redwood groves. Many of the stately coastal redwood trees (sequoia sempervirens) soar to 150 feet. This area was once cleared by logging for timber, but the forest has been replaced and is now protected parkland with hiking trails.",
-            imagepath: "img/redwood.jpg",
-            url: '',
-            center: [-122.16695, 37.81629],
-            zoom: 14.30,
+        'oaklandzoo': {
+            name: "Oakland Zoo",
+            description: "Inside the 490-acre Knowland Park, the Oakland Zoo is home to more than 660 native and exotic species residing in natural habitats, including an African savanna, tropical rain forest, and the Australian outback. For younger visitors and those who love to get up close, the children's zoo is home to a variety of exhibits including bats, lemurs, river otters, a petting zoo, and wildlife theater. The zoo is also home to several native species including gray wolves, mountain lions, and both black and grizzly bears.",
+            imagepath: "img/zoo.jpg",
+            center: [-122.14793, 37.75087],
+            zoom: 15.45,
             pitch: 60.00,
             bearing: 8.80
+        },
+        'redwood': {
+            name: "Redwood Regional Park",
+            description: "This pristine redwood forest is just a few miles outside of downtown Oakland, and it's worth taking the drive out here to meditate in the redwood groves. Many of the stately coastal redwood trees (sequoia sempervirens) soar to 150 feet. This area was once cleared by logging for timber, but the forest has been replaced and is now protected parkland with hiking trails.Within the park's 1,830 forested acres are deer, rabbits, and squirrels, as well as rare species like the golden eagle and the Alameda striped racer. The park has restrooms, water fountains, reservable picnic tables, and sites for overnight camping. Well-groomed paths invite visitors to amble through the redwoods, and detailed trail maps are available.",
+            imagepath: "img/redwood.jpg",
+            center: [-122.17543, 37.81004],
+            zoom: 14.38,
+            pitch: 60.00,
+            bearing: -103.62
         }
-        
 
     };
 
