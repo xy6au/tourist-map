@@ -216,7 +216,7 @@ var chapters = {
             name: "China town",
             description: "One of the oldest Chinatowns in the United States.  Oakland Chinatown was settled in the 1850s, shortly after the gold rush.  In 1906, the San Francisco earthquake and fire wrecked San Francisco Chinatown, causing thousands of San Francisco Chinese survivors to move to Oakland to rebuild their lives in the East Bay.Oakland Chinatown nowadays becomes the center of Asian cultures, arts and gourmet cuisine.  You can find up to 8 Asian languages of books in the Oakland Public Library Asian Branch; learn Balinese dance at the Oakland Asian Cultural Center; eat Japanese Ramen and Vietnamese banh mi sandwich, and drink Taiwanese boba tea; and buy American Chinese fortune cookies which all can be found in Chinatown!",
             imagepath: "img/chinatown.jpg",
-            url: 'https://xy6au.github.io/chinatown1/index.html',
+            url: 'https://xy6au.github.io/china-ana/',
 
             center: [-122.27027, 37.79820],
             zoom: 16.94,
